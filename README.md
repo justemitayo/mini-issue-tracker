@@ -40,6 +40,7 @@ State is managed globally with Zustand, which stores and syncs issues to localSt
 Tech Stack
 
 •	React + TypeScript
+. json server
 •	Zustand (state management)
 •	React Router
 •	React Hot Toast
