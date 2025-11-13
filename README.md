@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+           Mini Issue Tracker
+A lightweight issue tracking app built with React, TypeScript, and Zustand. It allows users to create, filter, update, and view issues directly in the browser. I made use of json server. 
+Instruction to run locally
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+git clone https://github.com/yourusername/mini-issue-tracker.git
+cd mini-issue-tracker
+npm install
+npm run dev
 
-In the project directory, you can run:
+Open a second terminal 
 
-### `npm start`
+  Json-server - - watch data/db.json - - port 8000 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+•	Create issues with title, description and priority by clicking the add issue button. 
+•	Filter and search by status, priority and title. 
+•	Edit and delete issue details by clicking the edit icon and the delete icon respectively. 
+•	Toggle the open and closed button. 
+•	View issue details on a separate page using routes and params. 
+•	Persistent storage using localStorage. 
+•	Instant feedback with React Hot Toast. 
+•	Fully responsive UI in both web and mobile view. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Architecture
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app follows a modular component structure:
+•	Navbar- containing the title. 
+•	SearchModal – Handles filtering and searching and new issue form. 
+•	IssueCard – Individual issue display with colored priority tags.
+•	IssueList – Displays all issues with scroll and layout spacing.
+•	NewIssueForm – Form to add new issues and its handled in the search modal. 
+•	IssueDetail – Shows full details for a selected issue using react-router-dom and params. 
+•	IssueClear- clears all the issue at once. 
+State is managed globally with Zustand, which stores and syncs issues to localStorage. Routing is handled by React Router.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+•	React + TypeScript
+•	Zustand (state management)
+•	React Router
+•	React Hot Toast
