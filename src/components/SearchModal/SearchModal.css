@@ -231,4 +231,7 @@
     font-size: 0.75rem;
     padding: 4px;
   }
+  .side-modal {
+    top: 0;
+  }
 }
