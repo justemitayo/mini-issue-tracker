@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useIssueStore } from '../../store/IssueStore';
 import { Type } from '../../Interface/type';
 import { useNavigate } from "react-router-dom";
-import back from '../../assets/Back_Arrow.png'
+
 import './IssueDetail.css'
 
 const IssueDetail = () => {
