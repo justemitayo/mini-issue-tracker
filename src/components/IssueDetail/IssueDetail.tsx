@@ -29,8 +29,8 @@ const IssueDetail = () => {
 
   return (
     <div className='issue-detail'>
-      <div className="btp-header">
-        <img alt='' src={back} className='back' onClick={() => navigate(-1)}/>
+      <div className="btp-header" >
+       <span className='back' onClick={() => navigate(-1)}>x</span>
       </div>
       <div className="detail-header">
         <h2>{issue.title}</h2>
