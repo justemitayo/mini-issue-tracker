@@ -235,4 +235,12 @@
   .side-modal {
     top: 0;
   }
+  @keyframes slideIn {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(12%);
+    }
+  }
 }
